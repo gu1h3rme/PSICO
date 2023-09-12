@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="icone-aba.png"/>
+    <title>PSICO - Tela Principal</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 50px;
+            color: #6A5ACD;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .logo img {
+            width: 350px;
+        }
+
+        .welcome {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .buttons button {
+            background-color: #6252ce;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 20px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .buttons button:last-child {
+            margin-right: 0;
+        }
+
+        .buttons button:hover {
+            background-color: #ffffff; 
+            transition: 0.1s;
+            color: #6252ce;
+            border: 2px solid #4030a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="borboleta.png" alt="Logo da Psico">
+        </div>
+        <h1>Seja bem-vindo ao Psico!</h1>
+        <div class="buttons">
+            <button onclick="window.location.href='login.html'">Login</button>
+            <button onclick="window.location.href='cadastro.html'">Cadastre-se</button>
+        </div>
+    </div>
+</body>
+</html>

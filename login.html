@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #6A5ACD;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 50px;
+            color: #ffffff;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button {
+            background-color: #6A5ACD;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #5644ca;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Página de Login</h1>
+        <div class="form-container">
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Nome de usuário" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "seu_nome_de_usuario" && password === "sua_senha") {
+                window.location.href = "pagina_em_branco.html";
+            } else {
+                alert("Autenticação falhou. Verifique seu nome de usuário e senha.");
+            }
+        });
+    </script>
+</body>
+</html>
